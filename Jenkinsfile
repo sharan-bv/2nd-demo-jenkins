@@ -15,7 +15,7 @@ pipeline {
 	stage ("Build the Docker Container from the Docker Image"){
             steps {
             echo "Starting to the build the docker container from the Docker image"
-            sh "docker run -d --name first-container-via-pipeline -p 80:80 pipe-line-image:latest ."
+            sh "docker run -d --name first-container-via-pipeline -p 80:80 pipe-line-image:latest"
 	    }
 	}
         stage ("Push to Docker Hub"){
