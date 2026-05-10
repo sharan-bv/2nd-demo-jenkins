@@ -20,7 +20,7 @@ pipeline {
 	}
         stage ("Push to Docker Hub"){
             steps {
-            echo "Pushing to the docker image to the docker hub"
+            echo "Pushing to the docker image to the docker hub-just a echo"
             }
         }    
     }   
